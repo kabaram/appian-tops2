@@ -1,0 +1,25 @@
+
+  a!queryRecordType(
+  recordType: 'recordType!{64f2517b-9842-4b22-98d0-cad6c146d0c8}TOPS2 Subaccount',
+  fields: {},
+  filters: a!queryLogicalExpression(
+    operator: "AND",
+    filters: {
+      a!queryFilter(
+        field: 'recordType!{64f2517b-9842-4b22-98d0-cad6c146d0c8}TOPS2 Subaccount.fields.{387a768e-b1f5-4969-8c58-ae87d033a5a4}mainNum',
+        operator: "=",
+        value: ri!main
+      ),
+      a!queryFilter(
+        field: 'recordType!{64f2517b-9842-4b22-98d0-cad6c146d0c8}TOPS2 Subaccount.fields.{6b01d390-86cb-4c58-9eab-5292a517cdcd}subNum',
+        operator: "=",
+        value: ri!sub
+      )
+    },
+    ignoreFiltersWithEmptyValues: true
+  ),
+  pagingInfo: a!pagingInfo(
+    startIndex: 1,
+    batchSize: 1
+  )
+).data,
