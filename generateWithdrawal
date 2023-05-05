@@ -1,0 +1,7 @@
+'recordType!{d7cfc5b1-98b8-4a19-98c2-65763cb6d2ee}TOPS2 Withdrawal'(
+  'recordType!{d7cfc5b1-98b8-4a19-98c2-65763cb6d2ee}TOPS2 Withdrawal.fields.{7925c515-2155-4c3f-8b1f-49a0b15787c2}createdOn': now(),
+  'recordType!{d7cfc5b1-98b8-4a19-98c2-65763cb6d2ee}TOPS2 Withdrawal.fields.{4b732e4b-710f-4561-a654-ddedf726b5ec}account': ri!subaccount['recordType!{64f2517b-9842-4b22-98d0-cad6c146d0c8}TOPS2 Subaccount.fields.{387a768e-b1f5-4969-8c58-ae87d033a5a4}mainNum'],
+  'recordType!{d7cfc5b1-98b8-4a19-98c2-65763cb6d2ee}TOPS2 Withdrawal.fields.{150f7ee8-fed0-44e1-b28a-a929921a184b}subaccount': ri!subaccount['recordType!{64f2517b-9842-4b22-98d0-cad6c146d0c8}TOPS2 Subaccount.fields.{6b01d390-86cb-4c58-9eab-5292a517cdcd}subNum'],
+  'recordType!{d7cfc5b1-98b8-4a19-98c2-65763cb6d2ee}TOPS2 Withdrawal.fields.{bf4c3bf9-43c8-42ab-a2a5-b8fa5228e6bb}amount': ri!amount,
+  'recordType!{d7cfc5b1-98b8-4a19-98c2-65763cb6d2ee}TOPS2 Withdrawal.fields.{03abd95a-bb00-47a7-a6aa-52556c214c5f}notes': "Purchase Order " & ri!poNumber
+)
