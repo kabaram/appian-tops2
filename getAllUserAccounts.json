@@ -1,0 +1,19 @@
+a!queryRecordType(
+  recordType: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account',
+  fields: {},
+  filters: a!queryLogicalExpression(
+    operator: "AND",
+    filters: {
+      a!queryFilter(
+        field: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{29a23b90-15d0-4e22-865e-f0aea70a4ba4}sponsor',
+        operator: "=",
+        value: loggedInUser()
+      )
+    },
+    ignoreFiltersWithEmptyValues: true
+  ),
+  pagingInfo: a!pagingInfo(
+    startIndex: 1,
+    batchSize: 100
+  )
+).data
