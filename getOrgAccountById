@@ -1,0 +1,16 @@
+index(
+  a!queryRecordType(
+    recordType: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account',
+    pagingInfo: a!pagingInfo(startIndex: 1, batchSize: 1),
+    filters: a!queryFilter(
+      field: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{8c1e5b3d-b97b-49af-af04-71bd8e9b5e4f}id',
+      operator: "=",
+      value: ri!id
+    )
+  ).data,
+  1,
+  cast(
+    'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account',
+    null
+  )
+)
