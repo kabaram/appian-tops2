@@ -1,0 +1,5 @@
+"New Payment Method" & if(
+  ri!cancel,
+  " (Cancelled)",
+  ": " & ri!record['recordType!{9c2db669-d1a0-4115-ad88-574d755e50d7}TOPS2 Payment Method.fields.{d9ad9887-bd1f-4cdb-ba2e-0356eb741f73}label']
+)
