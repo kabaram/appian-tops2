@@ -1,0 +1,21 @@
+a!queryRecordType(
+  recordType: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account',
+  fields: {
+    'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{29a23b90-15d0-4e22-865e-f0aea70a4ba4}sponsor',
+    'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{bf766c89-87d6-42af-a67e-ec515fd78833}desc',
+    'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{8c1e5b3d-b97b-49af-af04-71bd8e9b5e4f}id'
+  },
+  filters: a!queryFilter(
+    field: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{29a23b90-15d0-4e22-865e-f0aea70a4ba4}sponsor',
+    operator: "=",
+    value: loggedInUser()
+  ),
+  pagingInfo: a!pagingInfo(
+    startIndex: 1,
+    batchSize: 5000,
+    sort: a!sortInfo(
+      field: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{bf766c89-87d6-42af-a67e-ec515fd78833}desc',
+      ascending: true
+    )
+  )
+).data
