@@ -1,0 +1,5 @@
+"New Org Account" & if(
+  ri!cancel,
+  " (Cancelled)",
+  ": " & ri!record['recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{bf766c89-87d6-42af-a67e-ec515fd78833}desc']
+)
