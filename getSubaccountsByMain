@@ -1,0 +1,23 @@
+if(
+  a!isNotNullOrEmpty(ri!mainNum),
+a!queryRecordType(
+  recordType: 'recordType!{64f2517b-9842-4b22-98d0-cad6c146d0c8}TOPS2 Subaccount',
+  fields: {},
+  filters: a!queryLogicalExpression(
+    operator: "AND",
+    filters: {
+      a!queryFilter(
+        field: 'recordType!{64f2517b-9842-4b22-98d0-cad6c146d0c8}TOPS2 Subaccount.fields.{387a768e-b1f5-4969-8c58-ae87d033a5a4}mainNum',
+        operator: "=",
+        value: ri!mainNum
+      )
+    },
+    ignoreFiltersWithEmptyValues: true
+  ),
+  pagingInfo: a!pagingInfo(
+    startIndex: 1,
+    batchSize: 100
+  )
+).data,
+null
+)
