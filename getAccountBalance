@@ -1,0 +1,6 @@
+sum(
+  a!forEach(
+    rule!TOPS2_Get_Subaccounts_By_Main(ri!account),
+    fv!item['recordType!{64f2517b-9842-4b22-98d0-cad6c146d0c8}TOPS2 Subaccount.fields.{c4871a0e-a521-4b3b-90eb-37dbd5319674}balance']
+  )
+)
