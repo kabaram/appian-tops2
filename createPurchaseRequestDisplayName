@@ -1,0 +1,5 @@
+"New Purchase Request" & if(
+  ri!cancel,
+  " (Cancelled)",
+  ": " & ri!record['recordType!{6b07e015-5356-4129-b650-7f44354e80a7}TOPS2 Purchase Request.fields.{74ec027e-289b-459a-8d23-98257358987e}requester']
+)
