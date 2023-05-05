@@ -1,0 +1,11 @@
+a!queryRecordType(
+  recordType: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account',
+  pagingInfo: a!pagingInfo(
+    startIndex: 1,
+    batchSize: 5000,
+    sort: a!sortInfo(
+      field: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{bf766c89-87d6-42af-a67e-ec515fd78833}desc',
+      ascending: true
+    )
+  )
+).data
