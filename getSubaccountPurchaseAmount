@@ -1,0 +1,11 @@
+sum(
+  a!forEach(
+    items: ri!lineItems,
+    expression:
+    if(
+      fv!item['recordType!{33df7e6d-0c38-403a-aea1-63c46927609f}TOPS2 Line Item.fields.{333f78a2-fd63-4556-bba2-66aed95ef80c}subaccount'] = ri!subNum,
+      fv!item['recordType!{33df7e6d-0c38-403a-aea1-63c46927609f}TOPS2 Line Item.fields.{9490dcbd-5b3a-419d-8435-6a328c36c9c6}totalPrice'],
+      0
+    )
+  )
+)
