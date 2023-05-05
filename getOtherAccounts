@@ -1,0 +1,24 @@
+a!queryRecordType(
+  recordType: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account',
+  fields: {},
+  filters: a!queryLogicalExpression(
+    operator: "AND",
+    filters: {
+      a!queryFilter(
+        field: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{8c1e5b3d-b97b-49af-af04-71bd8e9b5e4f}id',
+        operator: "<>",
+        value: ri!exclude
+      ),
+      a!queryFilter(
+        field: 'recordType!{fb5c1fba-eaa0-49ee-92ed-191771b682f3}TOPS2 Org Account.fields.{8c1e5b3d-b97b-49af-af04-71bd8e9b5e4f}id',
+        operator: "in",
+        value: cons!TOPS2_Active_Account_Numbers
+      )
+    },
+    ignoreFiltersWithEmptyValues: true
+  ),
+  pagingInfo: a!pagingInfo(
+    startIndex: 1,
+    batchSize: 100
+  )
+).data
