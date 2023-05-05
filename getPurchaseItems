@@ -1,0 +1,19 @@
+a!queryRecordType(
+  recordType: 'recordType!{33df7e6d-0c38-403a-aea1-63c46927609f}TOPS2 Line Item',
+  fields: {},
+  filters: a!queryLogicalExpression(
+    operator: "AND",
+    filters: {
+      a!queryFilter(
+        field: 'recordType!{33df7e6d-0c38-403a-aea1-63c46927609f}TOPS2 Line Item.fields.{c047aa13-57d7-4d04-b14e-f24529fcb9e4}purchaseRequestId',
+        operator: "=",
+        value: ri!requestId
+      )
+    },
+    ignoreFiltersWithEmptyValues: true
+  ),
+  pagingInfo: a!pagingInfo(
+    startIndex: 1,
+    batchSize: 100
+  )
+)
